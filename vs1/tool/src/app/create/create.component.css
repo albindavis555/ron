@@ -1,0 +1,81 @@
+.ipsh-card {
+    margin: 50px auto; 
+    max-width: 500px; 
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+  }
+  
+  .card-header {
+    background-color: #000000;
+    max-width: 600px; 
+    color: #fff; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-title {
+    font-size: 30px;
+   
+    margin-left: 130px;
+    
+  }
+  
+  
+  .card-body {
+    
+    margin-right: -300px;
+    margin-left: 65px;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    margin: auto;
+   
+  }
+  
+  .ipsh-card label {
+    font-weight: bold;
+  }
+  
+  
+  .ipsh-card .btn-tool {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .ipsh-card .btn-tool:hover {
+    color: #f0f0f0;
+  }
+  
+  .ipsh-card .card-footer {
+    background-color: #000000; 
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .ipsh-card .action-btn {
+    background-color: #fff; 
+    color: #007bff; 
+    margin-right: 10px; 
+    border: 1px solid #4d4e4e;
+  }
+  
+  .ipsh-card .action-btn:hover {
+    background-color: #353536; 
+    color: #fff;
+  }
+  .form-group1{
+   /* font-weight: 100; */
+   padding-top: 10px;
+ 
+  }
+  

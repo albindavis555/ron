@@ -1,0 +1,97 @@
+<div class="col-md-12">
+    <div class="card ipsh-card">
+        <div class="card-header">
+            <h3 class="card-title"><i class="far fa-user mr-2 fa-icon-gradient-default"></i>Update</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="id">ID:<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.name}}</span> -->
+                        <input type="text" class="form-control" id="id"
+                            placeholder="id" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.name}}</span> -->
+                        <input type="text" class="form-control" id="name"
+                            placeholder="Name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.vehicleNo}}</span> -->
+                        <input type="text" class="form-control" id="address"
+                            placeholder="Address" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNo">Mobile No<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.mobileNo}}</span> -->
+                        <input type="text" class="form-control" id="mobileNo"
+                            placeholder="Mobile No" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="deliverdDate">Deliverd Date<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.idProof}}</span> -->
+                        <input type="date" class="form-control" id="deliverdDate"
+                            placeholder="Deliverd Date" value="">
+                    </div>
+                    
+                    
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="itemName">Item Name<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.guestAadhaarNo}}</span> -->
+                        <input type="text" class="form-control" id="itemName"
+                            placeholder="Item Name" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.guestRoomNo}}</span> -->
+                        <input type="text" class="form-control" id="quantity"
+                            placeholder="Quantity" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.idProof}}</span> -->
+                        <input type="text" class="form-control" id="amount"
+                            placeholder="Amount" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="returnDate">Return Date<a class="psh-label-requried">*</a></label>
+                        <!-- <span class="error-msg-span">{{validationMessage.idProof}}</span> -->
+                        <input type="date" class="form-control" id="returnDate"
+                            placeholder="Return Date" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="nn" name="nn" [(ngModel)]="nn" (change)="updateValue($event)">
+                        <label for="nn"><a class="psh-label-requried"> *</a>spam </label>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="card-footer clearfix">
+            <button type="button" class="btn btn-primary action-btn float-right" (click)="updateUser()">
+              UPDATE
+            </button>
+            <button type="button" class="btn btn-primary action-btn float-right" (click)="clear()">
+              CLEAR
+            </button>
+            <button type="button" class="btn btn-primary action-btn float-right" (click)="backToUser()">
+              BACK
+            </button>
+        </div>
+        
+    </div>
+</div>
