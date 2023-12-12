@@ -1,0 +1,90 @@
+/* .custom-card {
+    margin: 50px auto; 
+    max-width: 600px;
+    background-color: #000000; 
+    border: 1px solid #cccccc00; 
+    padding: 20px;
+    border-radius: 10px; 
+  } */
+ 
+  /* .card{
+    background-color: #e0ebeb;
+    padding-top: 2px;
+  }  */
+  
+  .card-footer1, .card-footer2{
+    background-color: #507c7c;
+  }
+  .card-header {
+    background-color: #00334d; 
+    color: #fff; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .card-title{
+
+    align-items: center;
+    margin: auto;
+
+    color: #ffffff;
+  }
+  
+  .form-group{
+    font-size: 14px;
+    font-weight: 500;
+    
+  }
+
+
+  /* .custom-form-group {
+    margin-bottom: 15px;
+  }
+   */
+  /* .custom-form-group label {
+    font-weight: bold;
+  } */
+  
+  /* .custom-input,
+  .custom-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } */
+  
+
+
+
+
+
+
+.action-btn {
+    background-color: #004d4d; 
+    border-radius: 6px;
+    margin: 6px;
+    color: #FFF; 
+}
+.action-btn:hover {
+    background-color: #003333; 
+    color: #FFF; 
+}
+
+.ipsh-badge-pending, .ipsh-badge-approve{
+    background-color: #FF5733; 
+    color: #FFF; 
+}
+
+.ipsh-badge-delete {
+  background-color: #ff0000; 
+  color: #ffffff;
+}
+#id-table-head{
+  background-color: #004d4d;
+  color: #FFF;
+}
+
+

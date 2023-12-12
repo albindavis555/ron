@@ -1,0 +1,132 @@
+
+<div class="card text-center mx-auto " style="max-width: 800px;">
+
+    
+    <div class="card-header">
+        <h3 class="card-title"><i class="far fa-user mr-2 fa-icon-gradient-default"></i>Customer Details</h3>
+
+        
+    </div>
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="mobileNo">Mobile No</label>
+                <input type="text" class="form-control" id="mobileNo" placeholder="Enter Mobile No">
+            </div>
+            <div class="form-group">
+                <label for="deliverdDate">Deliverd Date</label>
+                <input type="date" class="form-control" id="deliverdDate" placeholder="Enter Deliverd Date">
+            </div>
+        </div>
+        <div class="col-md-6"> 
+          
+            <div class="form-group">
+                <label for="itemName">Item</label>
+                <input list="item" class="form-control" id="itemName" >
+                <datalist id="item">
+                    <option value="truck">
+                    <option value="bike">
+                    <option value="car">
+                </datalist>
+            </div>
+            
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select class="form-control" id="status">
+                    <option value="" selected>Select status</option>
+                    <option value="RETURNED">RETURNED</option>
+                    <option value="DELETED">DELETED</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date</label>
+                <input type="date" class="form-control" id="returnDate" placeholder="Enter Return Date">
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="card-footer1 text-center">
+<button type="button" class="btn btn-secondary action-btn mx-2" (click)="clear()" style="margin-right: 10px;">
+    CLEAR
+</button>
+<button type="button" class="btn btn-secondary action-btn mx-2" (click)="search()">
+    SEARCH
+</button>
+</div>
+
+<br>
+<br>
+<div class="card">
+<div class="card-body">
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <ul class="nav nav-pills table-status-badge">
+                <li class="nav-item">
+                    <a class="nav-link active" (click)="refreshByStatus('')">
+                        ALL: {{ statusCountList.totalStatus }}
+
+                    </a>
+                <!-- </li>
+                 <li class="nav-item">
+                    <a class="nav-link" (click)="refreshByStatus('PROCESSD')">
+                        PENDING_APPROVAL
+                        <span class="badge badge-light ipsh-badge-pending">
+                            {{ statusCountList.processd }}
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="refreshByStatus('VERIFIED')">
+                        APPROVED
+                        <span class="badge badge-primary ipsh-badge-approve">
+                            {{ statusCountList.verified }}
+                        </span>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" (click)="refreshByStatus('RETURNED')">
+                        RETURNED
+                        <span class="badge badge-danger ipsh-badge-returned">
+                            {{statusCountList.returned}}
+                        </span>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="userList" class="table table-bordered table-hover dataTable responsive nowrap ipsh-grid">
+            <thead id="id-table-head">
+                <tr>
+                    <th *ngFor="let head of initialHead">{{ get(head.name) }}</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="card-footer2 clearfix">
+    <button type="button" class="btn btn-secondary action-btn float-right mx-2" (click)="confirmDeleteUser()">
+        {{ 'RETURNED'  }}
+    </button>
+    <button type="button" class="btn btn-secondary action-btn float-right mx-2" (click)="updateUser()">
+        {{ 'UPDATE'  }}
+    </button>
+    <button type="button" class="btn btn-secondary action-btn float-right mx-2" (click)="createUser()">
+        {{ 'CREATE'  }}
+    </button>
+</div>
+</div>
+
+
+

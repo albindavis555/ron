@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.EmbeddedId"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.rent.tool.entity.ToolEmbId"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.rent.tool.util.Constants"/>
+    <fullyQualifiedTypeName name="com.rent.tool.entity.ToolEntity"/>
+</qualifiedTypeNameHistroy>
